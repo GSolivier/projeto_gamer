@@ -383,8 +383,9 @@ table th {
     border-radius: 8px;
 }
 
-.table-line td{
+.table-line>td:first-of-type{
     border-collapse: collapse;
+    width: 15%;
 }
 
 tbody{
@@ -406,6 +407,7 @@ tbody{
 
 .table-line > td:last-of-type{
     border-right: none;
+    width: 10%;
 }
 /* Footer */
 .footer{
@@ -716,6 +718,40 @@ header{
     color: #f9aa01;
 }
 
+/* MAIN */
+.banner{
+    background-image: url(../images/banner_cadastro_de_jogador.png);
+}
+.border-gradient{
+    width: 800px;
+    height:670px;
+}
+
+.box-jogadores h1{
+    font-family: 'titilium web black';
+    font-size: 40px;
+}
+
+.box-jogadores hr{
+    width: 448px;
+}
+
+.input-gradient-jogadores{
+    width: 80%;
+}
+
+tbody > tr:last-of-type{
+    display: none;
+}
+
+.table-line{
+    height: 125px;
+}
+
+table{
+    width: 800px;
+    align-self: center;
+}
 /* FOOTER */
 .footer{
     background-image: url(../images/backgroung_footer-desktop.png);

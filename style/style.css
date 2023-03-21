@@ -209,7 +209,7 @@ header {
 }
 
 .social-box-mobile {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     display: flex;
     width: 152px;
     height: 31px;
@@ -301,7 +301,7 @@ header {
     top: 147px;
     width: 100%;
     height: 43px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 0px 0px 8px 8px;
     background-image: linear-gradient(to right,rgb(239, 239, 239, 60%), rgb(239, 239, 239, 20%));
     backdrop-filter: blur(5px);
@@ -446,9 +446,19 @@ header {
 .news{
     background-image: url(../images/backgrund_notícias\ 1.png);
     background-position: center;
-    background-repeat: repeat-y;
     background-size: cover;
+    position: relative;
     height: 3675px;
+}
+
+.news::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
 }
 
 .news-card img{
@@ -456,6 +466,7 @@ header {
 }
 
 .news h2{
+    position: relative;
     color: white;
     font-size: 15px;
     font-family: "titilium web";
@@ -467,6 +478,7 @@ header {
 }
 
 .news hr {
+    position: relative;
     width: 204px;
     margin: 0 auto 60px ;
     border: 1px solid #f9aa01;
@@ -605,9 +617,12 @@ li::before {
 .input-gradient{
     width: 100%;
     height: 40px;
-    padding: 1.5px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1) );
     border-radius: 8px;
+    background: 
+                linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255,0)) border-box;
+
+                border-image-slice: 1;
+                border: 1px solid transparent;
 }
 
 .box4-footer .input-gradient input{
@@ -652,7 +667,7 @@ li::before {
     width: 100%;
     height: 46px;
 }
-.top-button{
+.footer-bottom a{
     align-self: flex-end;
     margin-top: 110px;
     margin-right: 18px;
@@ -968,8 +983,10 @@ header{
     height: 1175px;
 }
 
+
 .news h2{
     font-size: 40px
+    
 }
 
 .news-card{
@@ -977,6 +994,7 @@ header{
     height: 387px;
     margin-bottom: 60px;
     transition: box-shadow 0.5s;
+    cursor: pointer;
 }
 
 .news-card:hover{
