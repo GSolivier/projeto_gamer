@@ -232,274 +232,182 @@ header {
     height: 30px;
 }
 
-/* MAIN CONTENT */
-
+/* MAIN */
 .banner{
-    background-image: url(../images/banner.png);
-    background-repeat: no-repeat;
+    background-image: url(../images/Banner_cadastro_de_Jogadores.png);
     background-size: cover;
-    height: 606px;
-    border-top: inset 60px transparent;
-    box-sizing: border-box
+    height: 1431px;
 }
 
-.banner-content{
-    height: 503px;
+.jogadores-flex{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.banner-content h1{
-    margin-top: 20px;
+
+.box-jogadores{
+    flex-direction: column;
+    background-image: linear-gradient(112.07deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 98.83%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    border-radius: 8px;
     color: white;
     font-family: "titilium web";
-    font-size: 40px;
-    text-shadow: 0px 0px 7px #FF0000;
-}
-
-.banner a {
-    text-decoration: none;
-    width: 170px;
-    height: 40px;
-    color: #1b1426;
-    text-align: center;
-    border-radius: 8px;
-    background-color: #f9aa01;
-    font-family: "titilium web bold";
-    font-size: 24px;
-}
-
-/* POPULARES */
-
-.most-popular{
-    position: relative;
-    height: 590px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: -1;
-}
-
-.most-popular-box img{
-    position: relative;
-    width: 100%;
-    height: 189px;
-}
-
-.most-popular-box{
-    width: 337px;
-    position: relative;
-}
-
-.box-vidro {
+    font-size: 28px;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 147px;
-    width: 100%;
-    height: 43px;
-    border: 1px solid white;
-    border-radius: 0px 0px 8px 8px;
-    background-image: linear-gradient(to right,rgb(239, 239, 239, 60%), rgb(239, 239, 239, 20%));
-    backdrop-filter: blur(5px);
-}
-
-.yellow-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    background-color: #f9aa01;
-    width: 135px;
-    height: 35px;
-
-    transform: skewX(-45deg);
-}
-
-.yellow-box h2{
-    transform: skewX(45deg);
-    font-size: 14px;
-    font-family: "titilium web bold";
-    padding-top: 8px;
-}
-
-/* "SECAO INFO */
-
-.programer-team{
-    background-color: #f9aa01;
-    height: 1535px;
-}
-
-.info-article{
-    position: relative;
-}
-
-.info-1{
-    margin-bottom: 300px;
-}
-
-.info-2{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.border-gradient2{
-    padding: 1px;
-    width: 210px;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1));    
-    border-radius: 8px;
-    z-index: 1;
-    position: absolute;
-    top: 100px;
-    right: 127px;
-}
-
-.info-box2 p{
-    font-size: 12px !important;
-}
-
-.programer-team h2{
-    font-size: 15px;
-    font-family: "titilium web";
-    text-align: center;
-    padding-top: 70px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-}
-
-.programer-team hr {
-    width: 204px;
-    margin: 0 auto 100px ;
-    border: 1px solid #1b1426;
 }
 
 .border-gradient{
+    margin-top: 138px;
     padding: 1px;
-    width: 210px;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1));    
+    height: 650px;
+    width: 335px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));    
     border-radius: 8px;
-    z-index: 1;
-    position: absolute;
-    top: 100px;
-    left: 127px;
+    
 }
 
-.info-box{
-    height: 262px;
-    background: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, 0.8));
-    backdrop-filter: blur(5px);
-    border-radius: 8px;
-    z-index: 0;
+.box-jogadores hr{
+    border: 2px solid #f9aa01;
+    width: 250px;
+    margin-bottom: 80px;
+}
+
+.box-jogadores h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.input-gradient-jogadores{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 5px;
-}
-
-.info-box h3{
-    font-size: 16px;
-    font-family: "titilium web";
-    color: white;
-    text-transform: uppercase;
-
-}
-
-.info-box p{
-    color: white;
-    font-family: "quicksand";
-    font-size: 14px;
-    text-align: justify;
-    padding-left: 25px;
-    padding-right: 25px;
-
-}
-
-.info-box2 img{
-    margin-left: 20px;
-}
-
-.perso2-mobile{
-    width: 332px;
-    height: 428px;
-}
-
-.perso1-mobile{
-    width: 314px;
-    height: 511px;
-}
-
-.perso1-desktop{
-    display: none;
-}
-
-.perso2-desktop{
-    display: none;
-}
-
-/* SEçÂO NOTICIAS */
-
-.news{
-    background-image: url(../images/backgrund_notícias\ 1.png);
-    background-position: center;
-    background-repeat: repeat-y;
-    background-size: cover;
-    height: 3675px;
-}
-
-.news-card img{
-    width: 100%;
-}
-
-.news h2{
-    color: white;
-    font-size: 15px;
-    font-family: "titilium web";
-    text-align: center;
-    padding-top: 70px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-}
-
-.news hr {
-    width: 204px;
-    margin: 0 auto 60px ;
-    border: 1px solid #f9aa01;
-}
-
-.text-box-news{
+    justify-content: center;
+    width: 273px;
+    height: 40px;
+    padding: 1.5px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0) );
     border-radius: 8px;
-    width: 100%;
-    height: 387px;
-    background-image: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
-    backdrop-filter: blur(3px);
-    color: white;
+    margin-bottom: 30px;
 }
 
-.text-box-news h4{
-    font-family: "titilium web";
-    font-size: 24px;
-    font-weight: 1;
-    padding: 25px 25px 0 25px;
+.input-gradient-jogadores input, #select-team{
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #bbaacc 0%, rgba(217, 217, 217, 0.862) 103.86%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    color: white;
+    padding-left: 16px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
 }
-.text-box-news p{
-    padding: 20px 25px 0 25px;
-    font-family: "quicksand";
+
+.input-gradient-jogadores input::placeholder, #select-team{
+    color: white;
+    font-family: "titilium web regular";
     font-size: 16px;
 }
 
-.news-card{
-    margin-bottom: 20px;
+#select-team{
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.box-jogadores .cadastro{
+    width: 273px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #f9aa01;
+    border: none;
+    font-family: "titilium web bold";
+    font-size: 24px;
+    margin-top: 49px;
 }
 
 
 
-/* FOOTER */
+table{
+    width: 100%;
+    border-spacing: 0 15px;
+    margin-top: 90px;
+}
+
+table, tr, td{
+    border-collapse: separate;
+
+}
+
+thead tr th{
+    border-bottom: 3px solid #f9aa01;
+    height: 50px;
+    border-spacing: 14px;
+}
+
+thead{
+    width: 100%;
+}
+
+table th {
+    color: #f9aa01;
+    font-family: 'titilium web black';
+    text-transform: uppercase;
+    text-shadow: 0 0 7px black;
+    font-size: 20px;
+}
+
+.table-line{
+    background-image: linear-gradient(112.07deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 98.83%);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-family: 'titilium web bold';
+    font-size: 20px;
+    height: 70px;
+    border-spacing: 0 10px;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+.table-line td{
+    border-collapse: collapse;
+}
+
+tbody{
+    border-spacing: 0 1000px;
+    /* background-color: #f9aa01; */
+}
+
+.number{
+    border-radius: 8px 0 0 8px;
+}
+
+.icon-trash{
+    border-radius: 0 8px 8px 0;
+}
+
+.table-line td{
+    border-right: 2px solid #f9aa01;
+}
+
+.table-line > td:last-of-type{
+    border-right: none;
+}
+/* Footer */
 .footer{
     background-image: url(../images/backgorund-footer.png);
     box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
@@ -808,188 +716,7 @@ header{
     color: #f9aa01;
 }
 
-/* MAIN CONTENT */
-/* BANNER */
-
-.banner{
-    background-image: url(../images/banner-desktop.png);
-    height: 720px;
-    border-top: none;
-}
-
-.banner h1{
-    font-size: 80px;
-}
-
-.banner-content a {
-    width: 200px;
-    margin-top: 450px;
-}
-
-/* ***SESSAO POPULARES ******** */
-
-.most-popular{
-    flex-direction: row;
-    height: 500px;
-    justify-content: space-between;
-}
-
-.most-popular-box{
-    width: 45%;
-    height: 313px;
-    justify-content: space-between;
-}
-
-.most-popular-box img{
-    height: 100%;
-}
-
-.box-vidro{
-    width: 576px;
-    height: 81px;
-    top: 232px;
-}
-
-.yellow-box{
-    width: 221px;
-    height: 57px;
-    margin-left: 57px;
-}
-
-.yellow-box h2{
-    font-size: 20px;
-}
-
-/* Secao Programer */
-
-.programer-team{
-    height: 1000px;
-}
-
-.programer-team h2{
-    font-size: 40px;
-}
-
-.info-flex{
-    display: flex;
-    justify-content: space-between;
-    height: 719px;
-}
-
-.border-gradient{
-    width: 360px;
-    height: 440px;
-}
-.border-gradient2{
-    width: 360px;
-    height: 440px;
-}
-.info-box{
-    justify-content: flex-start;
-    width: 360px;
-    height: 440px;
-}
-
-.info-box h3{
-    margin-top: 23px;
-    font-size: 25px;
-}
-
-.info-box p {
-    margin-top: 10px;
-    font-size: 16px;
-    width: 248px;
-    height: 49px;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-#prof {
-    font-size: 16px !important;
-}
-
-.info-box .icon1{
-    margin-top: 56px;
-    width: 143px;
-    height: 143px;
-}
-
-.info-box .icon2{
-    margin-top: 38px;
-    width: 162px;
-    height: 162px;
-}
-
-.border-gradient{
-    left: 230px !important;
-    top: 150px !important;
-}
-
-.border-gradient2{
-    right: 250px !important;
-    top: 150px !important;
-}
-
-.info-article{
-    bottom: 60px !important;
-}
-
-.info-2{
-    position: relative;
-    bottom: 40px;
-}
-
-.info-2 img{
-    width: 521px;
-    height: 692px;
-    margin-top: -40px;
-}
-
-.perso1-mobile{
-    display: none;
-}
-
-.perso1-desktop{
-    display: flex;
-}
-
-.perso2-mobile{
-    display:none;
-}
-
-.perso2-desktop{
-    display: flex;
-}
-
-/*  NEWS  */
-
-.news{
-    background-image: url(../images/backgrund_notícias_desktop.png);
-    height: 1175px;
-}
-
-.news h2{
-    font-size: 40px
-}
-
-.news-card{
-    width: 285px;
-    height: 387px;
-    margin-bottom: 60px;
-    transition: box-shadow 0.5s;
-}
-
-.news-card:hover{
-    box-shadow: 15px 0px 35px;
-}
-.news-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 /* FOOTER */
-
 .footer{
     background-image: url(../images/backgroung_footer-desktop.png);
     box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);

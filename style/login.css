@@ -19,12 +19,17 @@
 }
 
 @font-face {
+    font-family: "titilium web bold";
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
     font-family: "titilium web regular";
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
 }
 
 @font-face {
-    font-family: "titilium web bold";
+    font-family: 'titilium web black';
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
 /* RESET */
@@ -235,8 +240,16 @@ header {
     background-size: cover;
     height: 687px;
     border-top: inset 60px transparent;
-    box-sizing: border-box;
+    position: relative;
 }
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    backdrop-filter: blur(4px);
+  }
 
 .login-flex{
     display: flex;
