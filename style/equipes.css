@@ -144,6 +144,9 @@ header {
     width: 100%;
     text-align: center;
 }
+.contatos-mobile a{
+    text-decoration: none;
+}
 
 .tel-box-mobile {
     display: flex;
@@ -209,7 +212,7 @@ header {
 }
 
 .social-box-mobile {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     display: flex;
     width: 152px;
     height: 31px;
@@ -264,10 +267,11 @@ header {
 
 .border-gradient{
     margin-top: 138px;
-    padding: 1px;
     height: 492px;
     width: 335px;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));    
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255,0)) border-box;
+    border-image-slice: 1;
+    border: 2px solid transparent;   
     border-radius: 8px;
 
 }
@@ -284,32 +288,24 @@ header {
 }
 
 .input-gradient-equipes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 273px;
-    height: 40px;
-    padding: 1.5px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0) );
+    padding: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255,0)) border-box;
+    border-image-slice: 1;
+    border: 2px solid transparent;
     border-radius: 8px;
     margin-bottom: 30px;
 }
 
 .input-gradient-equipes input {
     display: flex;
-    align-items: center;
     padding-left: 16px;
-    background: transparent;
     width: 100%;
-    height: 100%;
     border-radius: 8px;
-    background-image: linear-gradient(90deg, #bbaacc 0%, rgba(217, 217, 217, 0.862) 103.86%);
+    background-image: linear-gradient(91.13deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
     backdrop-filter: blur(5px);
-    width: 100%;
-    color: white;
-    padding-left: 16px;
-    height: 40px;
     background: transparent;
+    height: 40px;
     border: none;
     outline: none;
 }
@@ -340,26 +336,16 @@ header {
     font-family: "titilium web bold";
 }
 
-
 table{
     width: 100%;
-    border-spacing: 0 15px;
+    /* border-spacing: 0 15px;  */
     margin-top: 90px;
-}
-
-table, tr, td{
-    /* border-collapse: separate; */
-
+    border-collapse: collapse;
 }
 
 thead tr th{
     border-bottom: 3px solid #f9aa01;
     height: 50px;
-    border-spacing: 14px;
-}
-
-thead{
-    width: 100%;
 }
 
 table th {
@@ -371,23 +357,22 @@ table th {
 }
 
 .table-line{
-    background-image: linear-gradient(112.07deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 98.83%);
-    /* backdrop-filter: blur(5px); */
+    background-image: linear-gradient(112.07deg, rgba(27, 20, 38, 0.9) 0%, rgba(60, 3, 65, 0.9) 98.83%);
+    backdrop-filter: blur(5px);
     text-align: center;
     color: white;
     font-family: 'titilium web bold';
     font-size: 20px;
     height: 70px;
-    border-spacing: 0 10px;
     border-radius: 8px;
-    background: 
-    /* efeito aplicado ao ao box a partir do padding */
-    linear-gradient(to right, rgba(27, 20, 38,.9), rgba(60, 3, 65,0.03)) padding-box,
-    /* efeito aplicado apenas na borda */
-    linear-gradient(to right, rgba(255, 255, 255,.3), rgba(255, 255, 255,0)) border-box;
-
+    background: linear-gradient(to right, rgba(27, 20, 38,.9), rgba(60, 3, 65,0.03)) padding-box,
+    linear-gradient(to right, rgba(255, 255, 255,.6), rgba(255, 255, 255,0)) border-box;
     border-image-slice: 1;
-    border: 2px solid transparent;
+    border: none;
+}
+
+.table-line td{
+    border: none !important; 
 }
 
 .number{
@@ -400,21 +385,22 @@ table th {
 
 .table-line td{
     border-right: 2px solid #f9aa01;
-    height: 35px;
+    height: 10px;
 }
 
 .table-line > td:last-of-type{
     border-right: none;
 }
 
-
 /* **************** FOOTER ************* */
-
 .footer{
     background-image: url(../images/backgorund-footer.png);
     box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
     background-size: cover;
     height: 1531px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-flex{
@@ -432,9 +418,13 @@ table th {
     text-align:justify;
 }
 
-.box1-footer *{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.box1-footer > img{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.box1-footer p{
+    margin-bottom: 100px;
 }
 
 .social-box-footer{
@@ -478,6 +468,7 @@ li a {
 
 li::before {
     content: url(../assets/icons/Line\ 27.svg);
+
     margin-right: 12px;
     padding-bottom: 8px;
   }
@@ -514,9 +505,12 @@ li::before {
 .input-gradient{
     width: 100%;
     height: 40px;
-    padding: 1.5px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1) );
     border-radius: 8px;
+    background: 
+                linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255,0)) border-box;
+
+                border-image-slice: 1;
+                border: 1px solid transparent;
 }
 
 .box4-footer .input-gradient input{
@@ -561,9 +555,9 @@ li::before {
     width: 100%;
     height: 46px;
 }
-.top-button{
+.footer-bottom a{
     align-self: flex-end;
-    margin-top: 110px;
+    margin-top: 80px;
     margin-right: 18px;
 }
 
@@ -571,10 +565,7 @@ li::before {
     color: white;
     font-family: "titilium web regular";
     align-self: center;
-    margin-top: 15px;
 }
-
-
 /* MEDIA QUERIES */
 
 @media screen and (min-width:992px) {
