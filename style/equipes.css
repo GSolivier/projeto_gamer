@@ -340,15 +340,31 @@ table{
     width: 100%;
     /* border-spacing: 0 15px;  */
     margin-top: 90px;
+}
+
+thead, tbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+thead tr {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #F9AA01;
+}
+
+table, tr, td{
     border-collapse: collapse;
 }
 
-thead tr th{
-    border-bottom: 3px solid #f9aa01;
-    height: 50px;
-}
-
 table th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
     color: #f9aa01;
     font-family: 'titilium web black';
     text-transform: uppercase;
@@ -357,6 +373,9 @@ table th {
 }
 
 .table-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-image: linear-gradient(112.07deg, rgba(27, 20, 38, 0.9) 0%, rgba(60, 3, 65, 0.9) 98.83%);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -368,25 +387,19 @@ table th {
     background: linear-gradient(to right, rgba(27, 20, 38,.9), rgba(60, 3, 65,0.03)) padding-box,
     linear-gradient(to right, rgba(255, 255, 255,.6), rgba(255, 255, 255,0)) border-box;
     border-image-slice: 1;
-    border: none;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
 }
 
-.table-line td{
-    border: none !important; 
+tbody tr td{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #F9AA01;
 }
 
-.number{
-    border-radius: 8px 0 0 8px;
-}
-
-.icon-trash{
-    border-radius: 0 8px 8px 0;
-}
-
-.table-line td{
-    border-right: 2px solid #f9aa01;
-    height: 10px;
-}
 
 .table-line > td:last-of-type{
     border-right: none;
