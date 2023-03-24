@@ -792,7 +792,7 @@ table {
 }
 
 .box1-footer *{
-    margin: 0;
+    margin: 0 !important;
 }
 .social-box-footer{
     width: 206px;
